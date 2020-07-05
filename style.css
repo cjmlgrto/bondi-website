@@ -48,12 +48,6 @@ a {
     border-radius: 0.33em;
 }
 
-a.secondary {
-    color: white;
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.1) inset;
-    background-color: rgba(255,255,255,0.25);
-}
-
 /* --- Layout --- */
 
 body {
@@ -95,6 +89,33 @@ nav a {
     font-size: 1.5rem;
     min-width: 240px;
     margin-bottom: 1rem;
+}
+
+nav a:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+a.primary:after {
+    margin-top: -0.25rem;
+    background-image: url(images/download.svg);
+}
+
+a.secondary {
+    color: white;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.1) inset;
+    background-color: rgba(255,255,255,0.1);
+}
+
+a.secondary:after {
+    margin-top: -0.25rem;
+    background-image: url(images/figma.svg);
 }
 
 footer {
