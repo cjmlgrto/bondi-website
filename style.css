@@ -1,0 +1,153 @@
+/* Bondi - by Carlos Melegrito */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Typography --- */
+
+html {
+    font-size: 100%;
+    line-height: 1.33;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+    color: #DCDADC;
+    background-color: #19191B;
+
+    background-image: url(images/blur.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1400px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.16;
+    color: white;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+a {
+    font-weight: 600;
+    text-decoration: none;
+
+    padding: 0.5em;
+    display: inline-block;
+    
+    color: black;
+    background-color: white;
+    border-radius: 0.33em;
+}
+
+a.secondary {
+    color: white;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.1) inset;
+    background-color: rgba(255,255,255,0.25);
+}
+
+/* --- Layout --- */
+
+body {
+    max-width: 848px;
+    margin: 2rem;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+section {
+    overflow-x: hidden;
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    margin-bottom: 2rem;
+    width: 848px;
+}
+
+nav {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1.5rem;
+    min-width: 240px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+footer a {
+    color: rgba(255,255,255, 0.5);
+    background-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+footer a:hover {
+    background-color: rgba(255,255,255, 0.1);
+}
+
+/* --- Media Queries --- */
+
+@media (min-width: 848px) {
+
+    p {
+        max-width: 42rem;
+        display: inline-block;
+    }
+
+    body {
+        margin: 4rem auto;
+    }
+
+    section {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    header {
+        margin-bottom: 4rem;
+    }
+    
+    figure {
+        margin-bottom: 4rem;
+    }
+
+    nav {
+        flex-direction: row;
+        margin-bottom: 4rem;
+    }
+
+    nav a {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    footer {
+        margin-top: 4rem;
+    }
+}
