@@ -51,7 +51,7 @@ a {
 /* --- Layout --- */
 
 body {
-    max-width: 848px;
+    max-width: 944px;
     margin: 2rem;
     text-align: center;
 }
@@ -64,17 +64,12 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
-section {
-    overflow-x: hidden;
-    width: calc(100% + 4rem);
-    margin-left: -2rem;
-    display: flex;
-    justify-content: center;
-}
-
 figure {
     margin-bottom: 2rem;
-    width: 848px;
+}
+
+figure img {
+    max-width: 100%;
 }
 
 nav {
