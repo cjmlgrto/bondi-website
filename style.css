@@ -9,7 +9,7 @@
 /* --- Typography --- */
 
 html {
-    font-size: 100%;
+    font-size: 80%;
     line-height: 1.33;
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
 
@@ -52,8 +52,15 @@ a {
 
 body {
     max-width: 944px;
-    margin: 2rem;
+    margin: 1rem;
     text-align: center;
+}
+
+@supports(padding: max(0px)) {
+    body {
+        margin-left: max(1rem, env(safe-area-inset-left));
+        margin-right: max(1rem, env(safe-area-inset-right));
+    }
 }
 
 header {
@@ -130,6 +137,10 @@ footer a:hover {
 /* --- Media Queries --- */
 
 @media (min-width: 848px) {
+
+    html {
+        font-size: 100%;
+    }
 
     p {
         max-width: 42rem;
